@@ -26,15 +26,5 @@ multiQueryRouter.get("/games/:id", async (req, res) => {
   }
 });
 
-multiQueryRouter.get("/search/:name", async (req, res) => {
-  try {
-    multiQuery.fetchDisplayAll(req, res);
-  } catch (e) {
-    res.json({
-      status: res.statusCode,
-      msg: "failed to retrieve Data.",
-    });
-  }
-});
 
 export { multiQueryRouter, express };

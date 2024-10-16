@@ -2,6 +2,7 @@ import Fetch from "node-fetch";
 import { AuthenticateUser } from "../middleware/AuthenticateUser.js";
 
 
+
 class MultiQuery {
   constructor() {
     this.apiUrl = process.env.MultiQuery_URL;
